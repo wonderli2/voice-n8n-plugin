@@ -1,0 +1,21 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Voice n8n Bridge",
+  "name_for_model": "voice_n8n",
+  "description_for_human": "Call my n8n voice webhook from ChatGPT.",
+  "description_for_model": "Plugin to forward audio to my n8n /webhook/voice endpoint and return the response.",
+  "auth": {
+    "type": "service_http",
+    "authorization_type": "header",
+    "headers": {
+      "Authorization": "Bearer wonderli123"
+    }
+  },
+  "api": {
+    "url": "https://<your-domain>/ai-voice-openapi.json",
+    "has_user_authentication": false
+  },
+  "logo_url": "https://<your-domain>/logo.png",
+  "contact_email": "you@example.com",
+  "legal_info_url": "https://<your-domain>/legal.html"
+}
